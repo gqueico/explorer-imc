@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --bg-color: #040924;
+  --tt-heading: #0C3440;
+  --tt-label: #00453A;
+  --tt-input: #212529;
+  --ot-input: #02799D;
+  --bd-input: rgba(73, 80, 87, 0.3);
+  --tt-placeholder: rgba(73, 80, 87, 0.5);
+  --bg-input: #DCE2E9;
+  --tt-button: #FFF;
+  --bg-button: #02799D;
+  --bg-error: #F03E3E;
+  --tt-error: #FFF;
+  font-size: 62.5%;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 400 1.6rem 'Roboto', sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: min(42.8rem, 90%);
+  padding: 4.8rem 6.4rem 6.4rem;
+  border-radius: .6rem;
+  background-color: #FFF;
+  box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.10);
+}
+
+.card form {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.title {
+  line-height: 4rem;
+  color: var(--tt-heading);
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+.input-wrapper + .input-wrapper {
+  margin-top: 1.6rem;
+}
+
+.input-wrapper label {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--tt-label);
+}
+
+.input-wrapper input {
+  padding: 1.6rem;
+  line-height: 2rem;
+  color: var(--tt-input);
+  background-color: var(--bg-input);
+  border: .1rem solid var(--bd-input);
+  border-radius: .4rem;
+}
+
+.input-wrapper input::placeholder {
+  color: var(--tt-placeholder);
+}
+
+.input-wrapper input:focus {
+  outline: .2rem solid var(--ot-input);
+}

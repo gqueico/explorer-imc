@@ -18,6 +18,7 @@
   --bg-input: #DCE2E9;
   --tt-button: #FFF;
   --bg-button: #02799D;
+  --bg-button-hover: #01475C;
   --bg-error: #F03E3E;
   --tt-error: #FFF;
   font-size: 62.5%;
@@ -89,5 +90,25 @@ body {
 }
 
 .input-wrapper input:focus {
-  outline: .2rem solid var(--ot-input);
+  outline: .1rem solid var(--ot-input);
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+  padding: 1.6rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: var(--tt-button);
+  background-color: var(--bg-button);
+  border-radius: .4rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 300ms ease-in-out;
+}
+
+button:hover {
+  background-color: var(--bg-button-hover);
 }

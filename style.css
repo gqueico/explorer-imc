@@ -147,3 +147,26 @@ form button:hover {
 .close:hover {
   transform: scale(1.1);
 }
+
+.alert-error {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-block: .8rem;
+  font-weight: 700;
+  line-height: 2rem;
+  text-align: center;
+  color: var(--tt-error);
+  background-color: var(--bg-error);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+  transition: transform 500ms ease-in-out;
+}
+
+.alert-error.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}

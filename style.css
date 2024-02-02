@@ -168,3 +168,9 @@ form button:hover {
   visibility: visible;
   transform: translateY(0);
 }
+
+@media screen and (max-width: 26.56em) {
+  .card {
+    padding: 3.2rem;
+  }
+}

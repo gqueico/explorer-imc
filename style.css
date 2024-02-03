@@ -43,7 +43,7 @@ body {
 
 .card {
   width: min(42.8rem, 90%);
-  padding: 4.8rem 6.4rem 6.4rem;
+  padding: 3.2rem;
   border-radius: .6rem;
   background-color: #FFF;
   box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.1);
@@ -134,6 +134,11 @@ form button:hover {
   position: relative;
 }
 
+.modal .title {
+  margin-top: .8rem;
+  font-size: 2.4rem;
+}
+
 .close {
   position: absolute;
   top: 1.6rem;
@@ -169,8 +174,23 @@ form button:hover {
   transform: translateY(0);
 }
 
-@media screen and (max-width: 26.56em) {
+@media screen and (min-width: 23.43em) {
+  .card .title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 26.56em) {
   .card {
-    padding: 3.2rem;
+    padding: 4.2rem;
+  }
+  .card .title {
+    font-size: 3.2rem;
+  }
+}
+
+@media screen and (min-width: 26.62em) {
+  .card {
+    padding: 4.8rem 6.4rem 6.4rem;
   }
 }

@@ -121,7 +121,7 @@ form button:hover {
   place-content: center;
   background-color: rgba(0, 0, 0, 0.7);
   opacity: 0;
-  visibility: hidden;
+  visibility: hidden; 
 }
 
 .modal-wrapper.open {
@@ -132,6 +132,12 @@ form button:hover {
 .modal-wrapper .card {
   width: 100%;
   position: relative;
+  transform: translateY(-4rem);
+  transition: transform 500ms ease-in-out;
+}
+
+.modal-wrapper.open .card {
+  transform: translateY(0);
 }
 
 .modal .title {

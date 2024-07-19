@@ -6,12 +6,8 @@ const Modal = {
   wrapper: document.querySelector('.modal-wrapper'),
   message: document.querySelector('.modal .title'),
   buttonClose: document.querySelector('.modal .close'),
-  open(){
-    Modal.wrapper.classList.add('open')
-  },
-  close() {
-    Modal.wrapper.classList.remove('open')
-  }
+  open: () => Modal.wrapper.classList.add('open'),
+  close: () => Modal.wrapper.classList.remove('open'),
 }
 
 form.onsubmit = event => {
@@ -21,7 +17,7 @@ form.onsubmit = event => {
   const height = inputHeight.value
 
   const result = IMC(weight, height)
-  const message = `Seu IMC é de ${ result}`
+  const message = `Seu IMC é de ${result}`
 
   Modal.message.innerText = message
   Modal.open()

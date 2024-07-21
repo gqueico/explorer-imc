@@ -27,8 +27,8 @@ form.onsubmit = event => {
   const result = calculateIMC(weight, height)
   displayResultMessage(result)
 
-  inputWeight.value = ""
-  inputHeight.value = ""
+  inputWeight.value = ''
+  inputHeight.value = ''
 }
 
 function displayResultMessage(result) {
